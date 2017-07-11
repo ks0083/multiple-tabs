@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+.tab {
+  width: 100%;
+  margin: 0 0 -2px;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+}
+.tab li {
+  width: 33%;
+  margin: 0;
+  padding: 5px 10px 0;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: #666;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+.tab li.current {
+  width: 33%;
+  background: #fff;
+  border-bottom: none;
+}
+
+.tab2 {
+  width: 100%;
+  margin: 0 0 -2px;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+}
+.tab2 li {
+  width: 33%;
+  margin: 0;
+  padding: 5px 10px 0;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.content {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #333;
+  border-top: none;
+  text-align: center;
+}
+.contents .content {
+  display: none;
+}
+.contents .content:nth-child(1) {
+  display: block;
+}
+
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
